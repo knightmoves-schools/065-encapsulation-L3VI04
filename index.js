@@ -1,16 +1,22 @@
-// Define the Rectangle class
+// Original values
+let length = 5;
+let height = 10;
+
+// Rectangle class encapsulating the logic
 class Rectangle {
-  constructor(width, height) {
-    this.width = width;
+  constructor(length, height) {
+    this.length = length;
     this.height = height;
   }
 
-  // Method to calculate area with no arguments
+  // Method that uses the instance's properties
   calculateArea() {
-    return this.width * this.height;
+    return this.length * this.height;
   }
 }
 
-// Example usage
-const rectangle = new Rectangle(8, 6);
-console.log("Area of the rectangle:", rectangle.calculateArea());
+// Create an instance using the original values
+const myRectangle = new Rectangle(length, height);
+
+// Output the result
+console.log(`The area of the rectangle is: ${myRectangle.calculateArea()}`
