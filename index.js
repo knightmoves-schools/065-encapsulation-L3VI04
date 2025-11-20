@@ -14,9 +14,10 @@ class Rectangle {
 }
 
 // Example usage:
-const rect = new Rectangle(1, 1);
+const rect = new Rectangle(1, 1); // set width=1, height=1
 console.log(`Width: ${rect.width}, Height: ${rect.height}`);
 console.log(`Area: ${rect.calculateArea()}`);
+
 
 
 
