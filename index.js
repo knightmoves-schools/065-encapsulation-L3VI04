@@ -12,13 +12,12 @@ class Rectangle {
     return this.width * this.height;
   }
 }
-// index.js
-const Rectangle = require('./Rectangle');
 
 // Example usage:
 const rect = new Rectangle(10, 5);
 console.log(`Width: ${rect.width}, Height: ${rect.height}`);
 console.log(`Area: ${rect.calculateArea()}`);
+
 
 
 
