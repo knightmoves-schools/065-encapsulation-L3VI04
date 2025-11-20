@@ -1,21 +1,19 @@
-// Define the Rectangle class
+// index.js
+
 class Rectangle {
   constructor(width, height) {
+    // Encapsulated variables
     this.width = width;
     this.height = height;
   }
 
-let length = 5;
-let height = 10;
-
-function calculateArea(length, height){
-    return length * height;
-  // Method to calculate area with no arguments
+  // Method to calculate area (no arguments needed)
   calculateArea() {
     return this.width * this.height;
   }
 }
 
-// Example usage
-const rectangle = new Rectangle(8, 6);
-console.log("Area of the rectangle:", rectangle.calculateArea());
+// Example usage:
+const rect = new Rectangle(10, 5);
+console.log(`Width: ${rect.width}, Height: ${rect.height}`);
+console.log(`Area: ${rect.calculateArea()}`);
